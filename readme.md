@@ -8,6 +8,12 @@
 npm start
 ```
 
+## Test
+
+```
+npm test
+```
+
 ## Build
 
 ```

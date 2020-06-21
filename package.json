@@ -7,7 +7,7 @@
     "start": "npm run watch & npm run server",
     "watch": "rollup -c -w 'src/**'",
     "server": "browser-sync start --files 'dist/*, style.css, index.html' --server",
-    "test": "npm run build && nyc --require esm --require jsdom-global/register --require ./test/register-riot-extension.js mocha src/**/*.spec.js"
+    "test": "nyc --require esm --require jsdom-global/register --require ./test/register-riot-extension.js mocha src/**/*.spec.js"
   },
   "devDependencies": {
     "@riotjs/compiler": "^4.9.2",
