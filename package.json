@@ -10,21 +10,21 @@
     "test": "nyc --require esm --require jsdom-global/register --require ./test/register-riot-extension.js mocha src/**/*.spec.js"
   },
   "devDependencies": {
-    "@riotjs/compiler": "^4.9.2",
-    "@riotjs/ssr": "^4.2.1",
-    "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.0.1",
-    "browser-sync": "^2.26.7",
+    "@riotjs/compiler": "^5.0.0",
+    "@riotjs/ssr": "^5.0.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "browser-sync": "^2.26.13",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.4.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^8.0.1",
+    "mocha": "^8.2.1",
     "nyc": "^15.1.0",
-    "rollup": "^2.17.1",
+    "rollup": "^2.33.1",
     "rollup-plugin-riot": "^4.0.2"
   },
   "dependencies": {
-    "riot": "^4.13.2"
+    "riot": "^5.0.0"
   }
 }
