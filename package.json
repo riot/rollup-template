@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@riotjs/compiler": "^5.0.0",
-    "@riotjs/ssr": "^5.0.0",
+    "@riotjs/ssr": "^6.0.0",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "browser-sync": "^2.26.13",
@@ -21,8 +21,8 @@
     "jsdom-global": "^3.0.2",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
-    "rollup": "^2.33.1",
-    "rollup-plugin-riot": "^4.0.2"
+    "rollup": "^2.33.3",
+    "rollup-plugin-riot": "^5.0.0"
   },
   "dependencies": {
     "riot": "^5.0.0"
