@@ -1,30 +1,31 @@
 {
   "scripts": {
-    "cov": "nyc report --reporter=text-lcov",
-    "cov-html": "nyc report --reporter=html",
+    "cov": "c8 report --reporter=text-lcov",
+    "cov-html": "c8 report --reporter=html",
     "build": "rollup -c",
     "prepublishOnly": "npm test",
     "start": "npm run watch & npm run server",
     "watch": "rollup -c -w 'src/**'",
     "server": "browser-sync start --files 'dist/*, style.css, index.html' --server",
-    "test": "nyc --require esm --require jsdom-global/register --require @riotjs/register mocha src/**/*.spec.js"
+    "test": "NODE_OPTIONS=\"--loader @riotjs/register\" c8 mocha --require jsdom-global/register src/**/*.spec.js"
   },
+  "type": "module",
   "devDependencies": {
-    "@riotjs/compiler": "^6.3.2",
-    "@riotjs/register": "^6.0.1",
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "browser-sync": "^2.27.10",
-    "chai": "^4.3.6",
-    "esm": "^3.2.25",
-    "jsdom": "^20.0.0",
+    "@riotjs/compiler": "^9.0.6",
+    "@riotjs/register": "^9.0.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "browser-sync": "^2.29.3",
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "jsdom": "^23.0.1",
     "jsdom-global": "^3.0.2",
-    "mocha": "^8.4.0",
-    "nyc": "^15.1.0",
-    "rollup": "^2.78.0",
-    "rollup-plugin-riot": "^6.0.0"
+    "mocha": "^10.2.0",
+    "prettier": "^3.1.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-riot": "^9.0.2"
   },
   "dependencies": {
-    "riot": "^7.0.3"
+    "riot": "^9.1.2"
   }
 }

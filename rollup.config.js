@@ -1,16 +1,12 @@
-import riot from 'rollup-plugin-riot'
-import nodeResolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
+import riot from "rollup-plugin-riot";
+import nodeResolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default {
-  input: 'src/index.js',
+  input: "src/index.js",
   output: {
-    file: 'dist/bundle.js',
-    format: 'iife'
+    file: "dist/bundle.js",
+    format: "iife",
   },
-  plugins: [
-    riot(),
-    nodeResolve(),
-    commonjs()
-  ]
-}
+  plugins: [riot(), nodeResolve(), commonjs()],
+};
